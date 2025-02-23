@@ -77,6 +77,12 @@ Forced app crash due to a simulated database error in Room.
 
 Firebase Crashlytics captures these crashes.
 
+
+https://github.com/user-attachments/assets/095b118b-4f85-47e5-8483-1a745c09d240  - force DB Crash 
+please uncomment the code of button that crash the appication to test it - HomeScreen.kt Line number 172
+
+
+
 <img width="1468" alt="image" src="https://github.com/user-attachments/assets/c05705a8-1e8e-4853-a435-3cecb1509247" />  - crashlytics 
 
 Network Performance
