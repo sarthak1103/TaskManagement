@@ -2,7 +2,7 @@ package com.project.taskmanagement.ui.features.task.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.project.animeapp.data.repository.GetTaskRepository
+import com.project.taskmanagement.data.repository.GetTaskRepository
 import com.project.taskmanagement.database.TaskEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -126,6 +126,13 @@ class HomeScreenViewModel @Inject constructor(
                 data = _state.value.data - task
             )
         }
+    }
+    fun forceDbCrash() {
+         viewModelScope.launch {
+             val task = TaskEntity(id = 1, title = "Duplicate Task")
+             insertTask(task)
+             insertTask(task)
+         }
     }
 
 }

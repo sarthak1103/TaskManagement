@@ -23,7 +23,6 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Save
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
@@ -42,7 +41,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -169,7 +167,12 @@ fun HomeScreen(
         ) {
             Text(stringResource(R.string.add_task))
         }
-
+//        Button(
+//            onClick = { homeScreenViewModel.forceDbCrash() },
+//            modifier = Modifier.fillMaxWidth()
+//        ) {
+//            Text("Force Database Crash")
+//        }
         Spacer(modifier = Modifier.height(16.dp))
 
         LazyColumn(

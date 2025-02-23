@@ -91,7 +91,6 @@ dependencies {
     implementation (libs.androidx.material.icons.extended)
     // mockk
     testImplementation(libs.mockk)
-    androidTestImplementation (libs.mockk.android)
     testImplementation(libs.junit)
     testImplementation(libs.androidx.core.testing)
     testImplementation(libs.kotlinx.coroutines.test)

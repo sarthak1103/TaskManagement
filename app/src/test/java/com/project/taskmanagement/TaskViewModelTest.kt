@@ -1,6 +1,6 @@
 package com.project.taskmanagement
 
-import com.project.animeapp.data.repository.GetTaskRepository
+import com.project.taskmanagement.data.repository.GetTaskRepository
 import com.project.taskmanagement.database.TaskEntity
 import com.project.taskmanagement.ui.features.task.home.HomeEvents
 import com.project.taskmanagement.ui.features.task.home.HomeScreenViewModel
