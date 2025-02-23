@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task Management</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="enter_task_title">Enter Task Title</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="add_task">Add Task</string>
+    <string name="mark_as_completed">Mark as completed</string>
+</resources>
