@@ -18,7 +18,7 @@ suspend fun <T> safeApiCall(
                         is UnknownHostException -> "No Internet Connection."
                         else -> throwable.message ?: "Something went wrong."
                     }
-                    ResultWrapper.GenericError(message) // ✅ Use GenericError instead
+                    ResultWrapper.GenericError(message)
                 }
 
                 else -> {

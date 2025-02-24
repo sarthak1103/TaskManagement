@@ -22,7 +22,7 @@ object DatabaseModule {
         return Room.databaseBuilder(
             context.applicationContext,
             AppDatabase::class.java,
-            "taskDb" // Change this to your actual database name
+            "taskDb"
         )
             .fallbackToDestructiveMigration()
             .build()
